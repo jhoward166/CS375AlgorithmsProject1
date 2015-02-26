@@ -1,0 +1,15 @@
+README
+program2 solves the Longest Common Subsequence problem using a recursive algorithm. The sequences are continually reduced and are compared to one another. As we find the first character that matches in both lists we can build upon that by making the problem a letter more complex each time and comparing that answer to the one that we have from the previous level. Recursion here is very ineffiecient giving us a time of 2^n. Many of the subproblems are repeated; the two lists are comparing themselves to one another at the same time so some of the porblems overlap and we end up doing the same problem multiple times killing efficiency.
+
+SAMPLE INPUT
+./program2 <input1.txt> <input2.txt> <output.txt>
+
+The input is as was defined in the assignment. The first two arguments are the input files containing the strings to be compared, and the third is the output file to which the output data is to be stored.
+
+SAMPLE OUTPUT
+The output is as follows:
+
+Recursive LCS Size: 12
+Recursive LCS Time: 5 milliseconds
+
+The first line is the size of the longest subsequence and the second is the time it took the algorithm to execute.

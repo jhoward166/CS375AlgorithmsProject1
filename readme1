@@ -1,0 +1,30 @@
+README
+program1 solves the Longest Common Subsequence problem using a bottom up algorithm. As we discussed in class this essentially fills out a grid comparing each possible combination of letter. The grid compares every letter to every other letter giving a solution that executes in m*n where m and n are the length of each string. We are then able to trace out pattern back up the chart to get the precise sequence of letters in our longest subsequence. This approach is quite efficient as it does not repeat any subproblem.
+
+SAMPLE INPUT
+./program1 <input1.txt> <input2.txt> <output.txt>
+
+The input is as was defined in the assignment. The first two arguments are the input files containing the strings to be compared, and the third is the output file to which the output data is to be stored.
+
+SAMPLE OUTPUT
+For inputs in which both strings are less than or equal to size 10 the output should look as follows:
+
+0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 
+0 0 0 1 1 1 1 1 1 
+0 0 0 1 2 2 2 2 2 
+0 0 0 1 2 3 3 3 3 
+0 0 0 1 2 3 3 3 3 
+0 0 1 1 2 3 3 3 3 
+0 0 1 1 2 3 3 3 3 
+Longest Common Subsequence: e a k 
+ Bottom Up LCS Time: 3 milliseconds
+
+The first m lines are the contents of the chart, line m+1 is the actual subsequence and line m+2 is the time in milliseconds that the algorithm took to complete.
+
+For inputs larger than 10 the output is as follows:
+
+Bottom Up LCS Size: 12
+Bottom Up LCS Time: 5 milliseconds
+
+The first line is the size of the longest subsequence and the second is the time it took the algorithm to execute.
